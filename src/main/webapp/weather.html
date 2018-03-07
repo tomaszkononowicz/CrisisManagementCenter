@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+       <head>
+
+	<title>Centrum zarządzania kryzysowego</title> 
+		<meta charset="utf-8" /> 
+		<meta name="author" content="Tomasz Kononowicz"/> 
+		<meta name="description" content="Strona Centrum Zarządzania Kryzysowego"/> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/reset.css" type="text/css" /> 
+		<link rel="stylesheet" href="css/style.css" type="text/css" /> 
+                <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="scripts/weather.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		
+</head>
+<body>
+
+<header id="menu">
+	<ul>
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="messages.html">Komunikaty</a></li>
+            <li><a class="active" href="weather.html">Pogoda</a></li>
+            <li><a href="dangers.html">Rodzaje zagrożeń</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+</header>
+
+<div class="container">
+    <h1>
+        Pogoda na kolejne 16 dni
+    </h1>
+    <span>Wpisz miasto aby sprawdzić pogodę </span>
+    <input type="text" name="city"/> 
+    <input type="button" value="Sprawdź" onclick="showWeather()"/>
+    <div id="weatherContainer"></div>
+
+</div>
+
+<footer>
+    Projekt i wykonianie: Tomasz Kononowicz
+    <br>
+    <small>© Copyright styczeń 2018 Proszę nie kopiować</small>
+</footer>
+</html>
+

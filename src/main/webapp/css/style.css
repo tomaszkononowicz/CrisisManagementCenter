@@ -1,0 +1,193 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2018-01-04, 11:31:29
+    Author     : Tomasz
+*/
+
+    html {
+            position:relative;
+            min-height: 100%;
+    }
+
+    body {
+            font-family: "Tahoma", "Verdana", "Arial", sans-serif;
+        background-color: white;
+        color: black;
+            -webkit-font-smoothing: antialiased;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+            margin-bottom: 50px;
+        }
+
+    header {
+        
+            display:block;
+            list-style-type: none;
+            background-color: #401C3D;
+            width: 100%;
+
+
+     }
+ 
+     h1 {
+        
+	color: black;
+	text-align: left;
+	font-size: 30px;
+	display: block;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+
+	padding: 1% 10px 2% 10px;
+
+	
+     }
+     
+
+    .container {
+	display: block;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1300px;
+        padding: 10px;
+    }
+    
+    .container ol li {
+	font-size: 18px;
+	margin-left: 50px;
+    }
+    
+    .container ul li {
+	font-size: 15px;
+	list-style: disc; 
+    }
+    
+    #map {
+    height: 700px;
+    width: 100%;
+    }
+    
+    table {
+        margin: 10px auto;
+    }
+    
+    table tr {
+        border-bottom: 2px solid #7F377A;
+        height: 64px;
+    }
+    
+    table tr td{
+        padding: 8px;
+        vertical-align: middle;
+    }
+    
+    table tr th{
+        padding: 8px;
+        font-size: 18px;
+        vertical-align: middle;
+        text-align: center;
+        color: white;
+        background-color: #7F377A;
+    }
+    
+    #weatherContainer {
+        text-align: center;
+    }
+    
+p {
+	color: black;
+	text-align: justify;
+	font-size: 18px;
+	display: block;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 30px;
+	padding: 1% 10px 2% 10px;
+	max-width: 1300px;
+	}
+
+#menu {
+	text-align: center;
+        color: white;
+}	
+	
+	#menu ul {
+		list-style: none;
+		}
+
+		#menu ul li {
+			display: inline-block;
+			font-size: 19px;
+			font-weight: bold;
+			margin-bottom: 1px;
+			margin-top: 1px;
+			list-style-type: none;
+			list-style: none;
+			vertical-align:top; 
+			}
+			
+		#menu ul li a.active {
+			background-color: #7F377A;
+			}
+			
+		#menu ul a:link, ul a:visited {
+			text-decoration: none;
+			display: block;
+			font-weight: bold;
+			background-color: #401C3D;
+			color: white;
+			padding: 10px 20px;
+			list-style-type: none;
+			}
+	
+		#menu ul a:hover {
+			background-color: #7F377A;
+			}
+	
+footer {
+    color: white;
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px 0px 5px 0px;
+    bottom: 0px;
+    width: 100%;
+    clear: both;
+	font-size: 15px;
+    text-align: center;
+    background-color: #401C3D;
+    }
+	
+
+	
+@media all and (max-width: 540px){
+
+	#menu ul li {
+		display: block;
+		font-size: 16px;
+		font-weight: bold;
+		margin-bottom: 1px;
+		margin-top: 1px;
+		list-style-type: none;
+		}
+
+	/*Zmiana rozmiaru czcionek*/	
+	
+/*	body{
+		font-size: 25vw;
+	}
+
+	p {
+		font-size: 0.15em;
+	}
+
+	footer {
+		font-size: 0.15em;
+	}*/
+}

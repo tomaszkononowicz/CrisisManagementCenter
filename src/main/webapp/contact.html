@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+       <head>
+
+	<title>Centrum zarządzania kryzysowego</title> 
+		<meta charset="utf-8" /> 
+		<meta name="author" content="Tomasz Kononowicz"/> 
+		<meta name="description" content="Strona Centrum Zarządzania Kryzysowego"/> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/reset.css" type="text/css" /> 
+		<link rel="stylesheet" href="css/style.css" type="text/css" /> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="scripts/initMap.js"></script>
+        <script src="scripts/distance.js"></script>
+    
+		
+</head>
+<body>
+
+<header id="menu">
+	<ul>
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="messages.html">Komunikaty</a></li>
+            <li><a href="weather.html">Pogoda</a></li>
+            <li><a href="dangers.html">Rodzaje zagrożeń</a></li>
+            <li><a class="active" href="contact.html">Kontakt</a></li>
+	</ul>
+    
+</header>
+
+
+    
+    <div class="container">
+        
+        <h1>Sprawdź odległość od swojego centrum kryzysowego:</h1>
+        <form action="javascript:getDistance()" method="post">
+            <span>Wpisz miasto, z którego wyruszasz: </span>
+            <input type="text" name="source">
+            <span>Wybierz swoje centrum kryzysowe: </span>
+            <select name="destination">
+                <option>WCZK Wrocław</option>
+                <option>WCZK Bydgoszcz</option>
+                <option>WCZK Łódź</option>
+                <option>WCZK Lublin</option>
+                <option>WCZK Gorzów Wielkopolski</option>
+                <option>WCZK Kraków</option>
+                <option>WCZK Warszawa</option>
+                <option>WCZK Opole</option>
+                <option>WCZK Rzeszów</option>
+                <option>WCZK Białystok</option>
+                <option>WCZK Gdańsk</option>
+                <option>WCZK Kielce</option>
+                <option>WCZK Olsztyn</option>
+                <option>WCZK Poznań</option>
+                <option>WCZK Katowice</option>
+                <option>WCZK Szczecin</option>
+            </select>
+            <input type="submit" value="Sprawdź"/><br/><br/>
+        </form>
+        
+        
+        <div id="distanceContainer"></div>
+        
+        <h1>Wojewódzkie Centrum Zarządzania Kryzysowego:</h1>
+        <div id="map">        <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"> </script>
+</div>
+    </div>
+
+
+</body>
+
+<footer>
+	Projekt i wykonianie: Tomasz Kononowicz
+	<br>
+	<small>© Copyright styczeń 2018 Proszę nie kopiować</small>
+</footer>
+
+</html>
